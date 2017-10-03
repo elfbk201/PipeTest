@@ -1,3 +1,6 @@
-﻿  unittest1.cpp
-     ╤ючфрхЄё  сшсышюЄхър C:\Users\Ko4evnik\Documents\Visual Studio 2015\Projects\Pipe\Debug\TestPipe.lib ш юс·хъЄ C:\Users\Ko4evnik\Documents\Visual Studio 2015\Projects\Pipe\Debug\TestPipe.exp
-  TestPipe.vcxproj -> C:\Users\Ko4evnik\Documents\Visual Studio 2015\Projects\Pipe\Debug\TestPipe.dll
+﻿  stdafx.cpp
+  unittest1.cpp
+  Pipe.cpp
+  Создание кода...
+     Создается библиотека C:\git\Debug\TestPipe.lib и объект C:\git\Debug\TestPipe.exp
+  TestPipe.vcxproj -> C:\git\Debug\TestPipe.dll
