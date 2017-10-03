@@ -9,4 +9,4 @@ build:
   verbosity: minimal
   publish_wap: true
 test_script:
-  - vstest.console /logger:Appveyor
+  - vstest.console /logger:Appveyor TestPipe.dll
