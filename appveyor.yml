@@ -1,5 +1,4 @@
-image:
-- Visual Studio 2015
+os: Visual Studio 2015
 
 configuration: Release
 
@@ -9,3 +8,5 @@ before_build:
 build:
   verbosity: minimal
   publish_wap: true
+test_script:
+  - vstest.console /logger:Appveyor "C:\projects\pipetest\x64\Release\TestPipe.dll"
