@@ -8,5 +8,5 @@ before_build:
 build:
   verbosity: minimal
   publish_wap: true
-
-- vstest.console /logger:Appveyor "C:\projects\pipetest\x64\Release\TestPipe.dll"
+test_script:
+  - vstest.console /logger:Appveyor "C:\projects\pipetest\x64\Release\TestPipe.dll"
