@@ -80,7 +80,7 @@ std::string Pipe::ReadPipe(std::string name)
 	siStartInfo.hStdInput = g_hChildStd_IN_Rd;
 	siStartInfo.dwFlags |= STARTF_USESTDHANDLES;
 
-	bSuccess = CreateProcess(TEXT("../lab2.1.exe"),
+	bSuccess = CreateProcess(TEXT("../lab2.exe"),
 		szCmdline,     // command line 
 		NULL,          // process security attributes 
 		NULL,          // primary thread security attributes 
