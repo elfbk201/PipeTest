@@ -13,26 +13,18 @@ HANDLE g_hChildStd_OUT_Wr = NULL;
 
 HANDLE g_hInputFile = NULL;
 
-void CreateChildProcess(void);
-void WriteToPipe(void);
-void ReadFromPipe(void);
 void ErrorExit(PTSTR);
 
 int main()
 {
 	Pipe p = Pipe();
-	//std::string as = "C:\\Users\\Ko4evnik\\Documents\\Visual Studio 2015\\Projects\\lab2.1\\Debug\\lab2.1.exe";
-	p.ReadPipe("C:\\Users\\Ko4evnik\\Documents\\Visual Studio 2015\\Projects\\lab2.1\\Debug\\lab2.1.exe");
+	p.ReadPipe("");
 
-	printf("\n->End of parent execution.\n");
 	return 0;
 }
 
 bool Pipe::CheckPipe(std::string cool[][2], int s, std::string str)
 {
-	//std::string cool[][2] = { { "a", "" },{ "b", "" },{ "c", "a" },{ "d", "a" },{ "e", "a" },{ "g", "cb" },{ "f","d" },{ "h","bc" },{ "i","bc" },{ "k","hgfe" },{ "m","hgfe" },{ "n","ikm" } };
-	//std::string str = "aaaaabedbedbdedebdbedebbdeebdbdedebecfecfecfecfcfeihgghigihihggihihihhihihiikmkmimikkimimkmmmmmnnnnn";
-	//int coolsize = std::size(*cool);
 	int strsize = std::size(str);
 	bool find = false;
 	bool error = false;
@@ -112,7 +104,7 @@ std::string Pipe::ReadPipe(std::string name)
 
 	DWORD dwRead;
 	CHAR chBuf[BUFSIZE];
-	//BOOL bSuccess = FALSE;
+
 	HANDLE hParentStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 
 	bSuccess = ReadFile(g_hChildStd_OUT_Rd, chBuf, BUFSIZE, &dwRead, NULL); //chBuf вывод
@@ -122,12 +114,9 @@ std::string Pipe::ReadPipe(std::string name)
 		str += chBuf[i];
 		i++;
 	}
-	//std::string str(chBuf);
-	std::cout << str;
-//	std::string cool[][2] = { { "a", "" },{ "b", "" },{ "c", "a" },{ "d", "a" },{ "e", "a" },{ "g", "cb" },{ "f","d" },{ "h","bc" },{ "i","bc" },{ "k","hgfe" },{ "m","hgfe" },{ "n","ikm" } };
-	//int coolsize = std::size(*cool);
-//	CheckPipe(cool, std::size(cool),str);
-//	system("Pause");
+
+	//std::cout << str;
+
 	return str;
 }
 
