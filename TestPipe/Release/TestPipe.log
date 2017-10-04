@@ -1,9 +1,0 @@
-﻿  stdafx.cpp
-  Pipe.cpp
-  unittest1.cpp
-LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/LTCG"
-     Создается библиотека C:\git\Release\TestPipe.lib и объект C:\git\Release\TestPipe.exp
-  Создание кода
-  All 259 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Создание кода завершено
-  TestPipe.vcxproj -> C:\git\Release\TestPipe.dll

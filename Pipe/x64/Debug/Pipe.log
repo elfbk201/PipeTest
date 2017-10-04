@@ -1,5 +1,0 @@
-﻿  stdafx.cpp
-  Pipe.cpp
-c:\git\pipe\pipe.cpp(36): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-c:\git\pipe\pipe.cpp(41): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  Pipe.vcxproj -> C:\git\x64\Debug\Pipe.exe
