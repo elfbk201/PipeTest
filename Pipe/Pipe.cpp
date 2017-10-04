@@ -25,6 +25,8 @@ int main()
 
 bool Pipe::CheckPipe(std::string cool[][2], int s, std::string str)
 {
+	if(str =="")
+		return false;
 	int strsize = std::size(str);
 	bool find = false;
 	bool error = false;
